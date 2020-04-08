@@ -13,7 +13,7 @@ body{
     color: hsl(234, 12%, 34%);
 }
 header{
-    margin: 50px auto 0;
+    margin: 50px auto;
     width: 100%;    
     max-width: 500px;
     text-align: center;
@@ -28,8 +28,7 @@ header p{
 }
 .content{
     display: flex;
-    padding: 32px;
-    margin: auto 50px;
+    margin: auto 150px;
 }
 .items{
     width: 100%;
@@ -37,7 +36,6 @@ header p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 32px;
 }
 .column{
     display: block;
@@ -45,18 +43,19 @@ header p{
 }
 .row{
     display: inline-block;
-    margin:auto 0;
+    padding: 32px;
+    margin: auto 0;
 }
 
 .items .row .card-super{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: 250px;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-top: 5px solid hsl(212, 86%, 64%);
+    border-top: 5px solid  hsl(180, 62%, 55%);
     border-radius: 8px;
-    padding: 16px;
+    padding: 20px;
 }
 .items .row .card-super img{
     position: absolute;
@@ -65,13 +64,13 @@ header p{
 }
 .items .column .card-builder{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: 250px;
     position: relative;
     border-top: 5px solid hsl(0, 78%, 62%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    padding: 16px;
+    padding: 20px;
 }
 .items .column .card-builder img{
     position: absolute;
@@ -81,13 +80,13 @@ header p{
 
 .items .row .card-calc{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: 250px;
     position: relative;
-    border-top: 5px solid hsl(180, 62%, 55%);
+    border-top: 5px solid hsl(212, 86%, 64%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    padding:16px;
+    padding:20px;
 }
 .items .row .card-calc img{
     position: absolute;
@@ -96,14 +95,14 @@ header p{
 }
 .items .column .card-karma{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: 250px;
     margin-top: 40px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     border-top: 5px solid hsl(34, 97%, 64%);
-    padding: 16px;
+    padding: 20px;
 }
 .items .column .card-karma img{
     position: absolute;
