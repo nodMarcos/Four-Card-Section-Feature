@@ -2,111 +2,94 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 body{
-    width: 100%;
-    max-width: 1440px;
     font: 200 15px Poppins, sans-serif;
     background-color:hsl(0, 0%, 98%);
     color: hsl(234, 12%, 34%);
 }
 header{
     margin: 50px auto;
-    width: 100%;    
     max-width: 500px;
     text-align: center;
 }
 header > h2{
+    margin:0;
     font-weight: 200;
     font-size:30px;
 }
+header > h1{
+    margin: 0;
+}
 header p{
-    width: 100%;
     font-weight: 400;
+    font-size: 14px;
 }
 .content{
     display: flex;
-    margin: auto 150px;
+    max-width: 1250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
-.items{
-    width: 100%;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    width: 320px;
+    padding: 30px;
 }
-.column{
-    display: block;
+.card h3{
     margin: 0 auto;
 }
-.row{
-    display: inline-block;
-    padding: 32px;
-    margin: auto 0;
-}
+.card p{
+    margin: 15px 0 30px;
+    font-size: 13px;
 
-.items .row .card-super{
-    width: 100%;
-    max-width: 300px;
-    height: 250px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.super{
     border-top: 5px solid  hsl(180, 62%, 55%);
-    border-radius: 8px;
-    padding: 20px;
+
 }
-.items .row .card-super img{
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
+.calc{
+    border-top: 5px solid hsl(212, 86%, 64%)
 }
-.items .column .card-builder{
-    width: 100%;
-    max-width: 300px;
-    height: 250px;
-    position: relative;
+.karma{
+   border-top: 5px solid hsl(34, 97%, 64%);
+}
+.builder{
     border-top: 5px solid hsl(0, 78%, 62%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 20px;
 }
-.items .column .card-builder img{
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-} 
-
-.items .row .card-calc{
-    width: 100%;
-    max-width: 300px;
-    height: 250px;
-    position: relative;
-    border-top: 5px solid hsl(212, 86%, 64%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding:20px;
-}
-.items .row .card-calc img{
-    position: absolute;
-    bottom: 20px;
-    right:30px;
-}
-.items .column .card-karma{
-    width: 100%;
-    max-width: 300px;
-    height: 250px;
-    margin-top: 40px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    border-top: 5px solid hsl(34, 97%, 64%);
-    padding: 20px;
-}
-.items .column .card-karma img{
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
+.card-lower{
+    transform: translateY(50%);
 }
 
+.card img{
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 1024px){
+    .card-lower{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 760px){
+    header{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 10px;
+    }
+    header p{
+        font-size: 12px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+}
